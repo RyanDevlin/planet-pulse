@@ -12,4 +12,5 @@ def get_args():
 
 if __name__ == "__main__":
     args = get_args()
-    run_etl(args.ftp_path)
+    spark = SparkSession.builder.getOrCreate()
+    run_etl(args.ftp_path, spark=spark)
