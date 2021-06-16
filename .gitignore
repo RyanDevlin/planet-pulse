@@ -3,6 +3,11 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+# Python Specific
+dist/
+*.egg-info
+build/
+
 # User-specific files
 *.rsuser
 *.suo
@@ -295,6 +300,7 @@ _Pvt_Extensions
 # Paket dependency manager
 .paket/paket.exe
 paket-files/
+venv/
 
 # FAKE - F# Make
 .fake/
