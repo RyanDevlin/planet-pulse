@@ -22,7 +22,7 @@ This is a data ingestion framework to intake enironment-specific data from the f
     # write a sample file to sample_out/.
     # Please ensure this directory is empty prior to running, otherwise
     # we will fail on spark.write.parquet('sample_out')
-    python intake/spark_etl.py --ftp_path=https://gml.noaa.gov/aftp/products/trends/co2/co2_weekly_mlo.csv
+    python intake/spark_etl.py --source=co2_weekly_mlo
 
     # Feel free to inspect the output of the pipeline from the spark-shell following 
     # the below commands
